@@ -20,14 +20,14 @@ export default function Exams() {
 
   if (!examsList || !examsList.length) {
     return (
-      <>
-        <p>No exam data found.</p>
+      <div className='flex flex-col gap-4 h-screen justify-center items-center'>
+        <p className='text-2xl'>No exam data found.</p>
         <Button
           text="Add Exam"
           onClick={() => router.push('exam-editor')}
           color='#22c55e'
         />
-      </>
+      </div>
     )
   }
 
